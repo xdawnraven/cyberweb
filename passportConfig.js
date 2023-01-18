@@ -12,7 +12,7 @@ function initialize(passport) {
       [username],
       (err, results) => {
         if (err) {
-          console.log(username);
+          console.log(typeof username);
           throw err;
         }
         console.log(results.rows);
