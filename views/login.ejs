@@ -50,25 +50,30 @@
       </div>
       <p></p>
       <div>
-        <input type="submit" value="Login" />
+        <input type="submit" value="Login" onClick="stopAudio()" />
       </div>
     </div>
     </form>
   </div>
   <script>
-    var o = 0;
     function switchPlay() {
-        if (o == 0) {
-          playAudio();
-          o = 1;
-        }
+        var b = false;
+        playAudio(b);
     }
-    function playAudio() {
+    function playAudio(var b) {
       var a = new Audio("Lantern_Rite.mp3");
       a.loop=true;
-      a.play();
+      if (b == true) {
+        a.stop();
+      }
+      else {
+        a.play();
+      }
     }
-    
+    function stopAudio() {
+        var b = true;
+        playAudio(b);
+    }
   </script>  
   </body>
 </html>
