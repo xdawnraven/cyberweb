@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+}
+body {
+    background-image: url("/Dragon1.jpg");
+
+}
+
+.divTitle {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 120px;
+    outline: #ffffff;
+    outline-width: 5px;
+    font-weight: bold;
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.divSub {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    font-size: 30px;
+    outline: #ffffff;
+    outline-width: 5px;
+    font-weight: bold;
+    -webkit-animation: color-change2 1s infinite;
+    -moz-animation: color-change2 1s infinite;
+    -o-animation: color-change2 1s infinite;
+    -ms-animation: color-change2 1s infinite;
+    animation: color-change2 1s infinite;
+}
+
+@keyframes color-change {
+    0% { color: rgba(255, 255, 255, 0); }
+    50% { color: rgb(255, 255, 255); }
+    100% { color: rgba(255, 255, 255, 0); }
+  }
+
+@keyframes color-change2 {
+    0% { color: rgb(0, 255, 0); }
+    33% { color: blue; }
+    66% { color: red; }
+    100% { color: rgb(0, 255, 0); }
+  }
+
+.container {
+    text-align:center;
+}
+
+#error_msg {
+    text-align: center;
+    color: #eb4034;
+}
+
+#group_name {
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+    padding: 20px 0 20px 0;
+}
+
+.login {
+    width: 550px;
+    padding-left: 50px;
+    padding-right: 50px ;
+    background-color: #ffffff91;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 70px auto;
+    border-radius: 10%;
+}
+.login h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+.login form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.login form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #3274d6;
+    color: #ffffff;
+}
+
+.login form input[type="password"], .login form input[type="text"] {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.login form input[type="submit"] {
+    background-color: #ce9833;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10%;
+}
+.login form input[type="submit"]:hover {
+    background-color: #ce9833;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10%;
+}

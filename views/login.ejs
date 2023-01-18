@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Serenitea</title>
+    <!-- <script>
+      playAudio();
+    </script> -->
+    <script>
+      window.onload = function playAudio() {
+        var a = new Audio("Lantern_Rite.mp3");
+        a.play();
+      }
+    </script>
+  </head>
+  
+
+  <body>
+    <marquee behaviour="scroll" direction="right" scrollamount="20"><h1 class="divTitle">~This is Serenitea~</h1></marquee>
+    <div class="container">
+    <div class="login">
+      <h1 class="">Login</h1>
+
+    <form action="/" method="POST">
+      
+      <div class="formBox">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+          onclick="switchPlay()"
+          required
+        />
+      </div>
+      <p></p>
+      <div class="formBox">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+      </div>
+      <p></p>
+      <div>
+        <input type="submit" value="Login" />
+      </div>
+    </div>
+    </form>
+  </div>
+  <script>
+    var o = 0;
+    function switchPlay() {
+        if (o == 0) {
+          playAudio();
+          o = 1;
+        }
+    }
+    function playAudio() {
+      var a = new Audio("Lantern_Rite.mp3");
+      a.loop=true;
+      a.play();
+    }
+    
+  </script>  
+  </body>
+</html>
