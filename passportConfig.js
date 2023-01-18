@@ -8,7 +8,7 @@ function initialize(passport) {
   const authenticateUser = (username, password, done) => {
     console.log(username, password);
     pool.query(
-      `SELECT * FROM login WHERE username = $1`,
+      `SELECT * FROM login WHERE username = '5678'`,
       [username],
       (err, results) => {
         if (err) {
