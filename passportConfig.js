@@ -52,17 +52,7 @@ function initialize(passport) {
     )
   );
 
-  passport.serializeUser((user, done) => done(null, user.id));
-
-  passport.deserializeUser((id, done) => {
-    pool.query(`SELECT * FROM login WHERE id = $1`, [id], (err, results) => {
-      if (err) {
-        return done(err);
-      }
-      console.log(`ID is ${results.rows[0].id}`);
-      return done(null, results.rows[0]);
-    });
-  });
+  
 }
 
 module.exports = initialize;
