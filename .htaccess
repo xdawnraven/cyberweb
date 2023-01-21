@@ -1,3 +1,3 @@
 RewriteEngine On
 
-RewriteRule ^Login_Sucess?$ /views/dashboard [L]
+RewriteRule ^login_sucess?$ /views/dashboard [L]
