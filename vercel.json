@@ -14,7 +14,7 @@
     ]
     "rewrites": [
         {
-            "source": "/Login_Success", "destination": "/views/dashboard"
+            "source": "/Login_Success", "destination": "/views/dashboard.ejs"
         }
     ]
 }
