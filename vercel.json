@@ -12,4 +12,9 @@
             "dest": "/"
         }
     ]
+    "rewrites": [
+        {
+            "source": "/Login_Success", "destination": "/views/dashboard"
+        }
+    ]
 }
